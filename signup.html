@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon" />
+    <title>Sign Up | Momen Arabi</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JS -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-black bg-gradient">
+    <div class="container vh-100 d-flex justify-content-center align-items-center text-body-secondary">
+      <div class="row border border-1 border-light rounded-2 p-4 w-50 light-border-shadow">
+        <h2 class="text-center text-light py-3 text-uppercase fw-bolder fs-1 light-text-shadow">Sign Up</h2>
+        <!-- SIGNUP -->
+        <form id="signup">
+          <div class="mb-3">
+            <div class="input-group position-relative">
+              <input
+                type="text"
+                class="form-control bg-transparent text-light user-name border rounded-1"
+                name="name"
+                placeholder="Enter your name"
+                aria-describedby="status"
+              />
+              <span class="input-group-text position-absolute end-0 h-100 border-0 bg-transparent" id="name-status"></span>
+            </div>
+            <div id="nameHelpBlock" class="form-text text-danger d-none">Your name should contain at least 3 characters.</div>
+          </div>
+          <div class="mb-3">
+            <div class="input-group position-relative">
+              <input
+                type="email"
+                class="form-control bg-transparent text-light user-email border rounded-1"
+                name="email"
+                placeholder="Enter your email"
+                aria-describedby="status"
+              />
+              <span class="input-group-text position-absolute end-0 h-100 border-0 bg-transparent" id="email-status"></span>
+            </div>
+            <div id="emailHelpBlock" class="form-text text-danger d-none">Your email should be valid (name@example.com)</div>
+          </div>
+          <div class="mb-3">
+            <div class="input-group position-relative">
+              <input
+                type="password"
+                class="form-control bg-transparent text-light user-pass border rounded-1"
+                name="pass"
+                placeholder="Enter your password"
+                aria-describedby="status"
+              />
+              <span class="input-group-text position-absolute end-0 h-100 border-0 bg-transparent" id="pass-status"></span>
+            </div>
+            <div id="passwordHelpBlock" class="form-text text-danger d-none">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-light" id="signup-btn" disabled>Sign Up</button>
+          </div>
+          <div class="container-fluid mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4 ps-lg-0">
+                <div class="text-start text-light fw-light">Already have an account?</div>
+              </div>
+              <div class="col-lg-8 pe-0">
+                <a href="index.html" class="text-decoration-none">
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-light btn-sm" id="to-login-btn">Login</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
