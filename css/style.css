@@ -45,24 +45,29 @@ body {
 }
 
 #facebook:hover {
-  color: #1877f2!important;
+  color: #1877f2 !important;
 }
 
 #youtube:hover {
-  color: #cc181e!important;
+  color: #cc181e !important;
 }
 
 #discord:hover {
-  color: #7289da!important;
+  color: #7289da !important;
 }
 
 #linkedin:hover {
-  color: #0077b5!important;
+  color: #0077b5 !important;
 }
-
 
 @media screen and (max-width: 768px) {
   :root {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .w-lg-75 {
+    width: 75% !important;
   }
 }
